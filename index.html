@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Havanna</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    
+    
+</head>
+
+<body> 
+
+    <nav>
+        <div class="flex">
+            <p class="logo"><img src="img/logo2.png" alt="Havanna's Inc."></p>
+            <ul class="menu">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#conocenos">Nosotros</a></li>
+            <li> <a href="#productos">Productos</a></li>
+            <li> <a href="#ofertas">Promociones</a></li>
+            <li> <a href="#contactar">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<figure class="galeria">
+    <div id="myCarousel" class="carousel">
+    <div class="carousel__slide">
+        <img data-lazy-src="img/afiche1.jpg">
+    </div>
+    <div class="carousel__slide">
+        <img data-lazy-src="img/afiche2.jpg">
+    </div>
+    <div class="carousel__slide">
+        <img data-lazy-src="img/afiche3.jpg">
+    </div>
+    <div class="carousel__slide">
+        <img data-lazy-src="img/afiche4.jpg">
+    </div>
+</figure>
+
+<!-- JQUERY -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+const myCarousel = new Carousel(document.querySelector(".carousel"), {
+slides: [
+    {
+    html: "1",
+    },
+    {
+    html: "2",
+    },
+    {
+    html: "3",
+    },
+],
+});
+</script>
+<!-- FIN JQUERY -->
+
+<header class="fondo">
+    <div class="bienvenidos">
+        <h1>HAVANNA</h1>
+        <p><strong>¡Bienvenidos a alfajores Havanna!</strong></p>
+        <p>Aquí podrás encontrar los mejores alfajores Argentinos.
+            <p>Accede a la mas fina colección de alfajores en nuestro e-commerce.</p>
+            <a class="boton1" href="#">COMPRAR</a>
+        </div>
+    </header>
+        
+
+<section id="conocenos">
+    <div class="contenedor" id="columnas">
+        <div class="titulohis">
+            <h2 class="tituloconocenos">¿Cómo Surgío Havanna?</h2>
+            <p class="historia">
+                La empresa fue fundada en 1947 por Benjamín Sisterna, Demetrio Elíades y Giuseppe Vaccotti y comenzó su actividad como productora de alfajores en la ciudad de Mar del Plata, Provincia de Buenos Aires en el 6 de enero de 1948  los alfajores. Con el objetivo de    elaborar todos nuestros productos y servicios con altos estándares de calidad, manteniendo su origen artesanal. Queremos trasmitir la Experiencia Havanna a través de nuestro estilo de atención: calidez, servicio y pasión.
+            
+            </p>
+        </div>
+        <div class="imgcafe">
+            <img class="foto" src="img/Mardeplata.jpg" alt="historia"></div>
+    </div>
+</section>
+
+<section class="contenedor" id="intro-productos">
+    <h2>CONOCÉ OTRAS ESPECIALIDADES</h2>
+    <div class="alfajores">
+        <article id="alfa" class="card">
+            <img src="img/160 x 150- 2 Alfajores.png" alt="AFAJORES">
+            <h3>ALFAJORES</h3>
+            <p>Dos galletitas rellenas con mucho dulce de leche y cuebiertas con el más puro chocolate semiamargo y una exquisita cobertura de merengue italiano.  
+            </p>
+            <a class="boton2" href="#">Más información</a>
+        </article>
+
+        <article id="havannets" class="card">
+            <img src="img/160 x 150 Havannets.png" alt="havannets">
+            <h3>HAVANNETS</h3>
+            <p>
+            Delicado bocadito de Dulce de Leche, cubiertos con el más fino chocolate blanco. Con una exquisita cobertura de glasé blanco.
+            </p>
+            <a class="boton3" href="#">Más información</a>
+        </article>
+
+        <article id="Barritas" class="card">
+            <img src="img/160 x 150 Barritas.png" alt="barritas">
+            <h3>BARRITAS</h3>
+            <p>
+            Dando un paso más en la búsqueda de la excelencia y con la misma pasión de siempre, los maestros de Havanna fusionaron el exquisito chocolate blanco. 
+            </p>
+            <a class="boton4" href="#">Más información</a>
+        </article>
+    </div>
+</section>
+
+<section class="galeria" id="productos">
+    <h2>CONOCÉ NUESTROS PRODUCTOS</h2>
+    <div class="productos">
+        <a href="img/Producto1.png" data-fancybox="gallery" data-caption="chocolates">
+            <img src="img/producto1c.jpg" alt="chocolates">
+        </a>
+
+        <a href="img/Producto2.png" data-fancybox="gallery" data-caption="Galletitas de limón">
+            <img src="img/producto2c.jpg" alt="Galletitas de limón">
+        </a>
+
+        <a href="img/Producto3.png" data-fancybox="gallery" data-caption="Dulce de leche">
+            <img src="img/producto3c.jpg" alt="Dulce de leche">
+        </a>
+
+        <a href="img/Producto4.png" data-fancybox="gallery" data-caption="Alfajores mini">
+            <img src="img/producto4c.jpg" alt="Alfajores mini">
+        </a>
+
+        <a href="img/Producto5.png" data-fancybox="gallery" data-caption="Medallones">
+            <img src="img/producto5c.jpg" alt="Medallones">
+        </a>
+
+        <a href="img/Producto6.png" data-fancybox="gallery" data-caption="Galletitas de limón con chocolate">
+            <img src="img/producto6c.jpg" alt="Galletitas de limón con chocolate">
+        </a>
+    </div>
+</section>
+
+<section class="contenedor-ofertas" id="ofertas">
+    <h2>PROMOCIONES EXCLUSIVAS</h2>
+    <div class="combos">
+        <article id="Promo1" class="card">
+            <img src="img/Promo1.png" alt="Promo1">
+            <h3>GALLETITAS DE LIMÓN CON CHOCOLATE + MEDALLONES DE CHOCOLATE.
+            </h3>
+            <p>$1400</p>
+            <a class="boton2" href="#">COMPRAR</a>
+        </article>
+
+        <article id="Promo2" class="card">
+            <img src="img/Promo2.png" alt="ALFAJORES MINI + DULCE DE LECHE UNA MEZCLA ÚNICA.">
+            <h3>ALFAJORES MINI + DULCE DE LECHE UNA MEZCLA ÚNICA Y ORGÁNICA.</h3>
+            <p>
+            $1600
+            </p>
+            <a class="boton3" href="#">COMPRAR</a>
+        </article>
+
+        <article id="Promo3" class="card">
+            <img src="img/Promo3.png" alt="chocolates + galletitas de limón.">
+            <h3>FINOS E IRRESISTIBLES BOMBONES DE CHOCOLATE +  GALLETITAS DE LIMÓN.</h3>
+            <p>
+            $1800
+            </p>
+            <a class="boton4" href="#">COMPRAR</a>
+        </article>
+    </div>
+
+    <div><a class="boton5" href="#">VER MÁS COMBOS</a></div>
+
+<section class="form-contenedor" id="contactar">
+    <div class="formulario">
+        <h2>CONTÁCTANOS</h2>
+        <form action="consulta" method="post">
+            <div class="espaciado">
+                <label for="nombre-y-apellido">Nombre y apellido:</label>
+                <input type="text" name="nombre-y-apellido" id="nombre-y-apellido" required placeholder="Ingresa tu nombre y apellido*">
+            </div>
+            <div class="espaciado">
+                <label for="correo-electronico">Correo electrónico:</label>
+                <input type="email" name="correo-electronico" id="correo-electronico" required placeholder="Ingresa tu correo electrónico*">
+            </div>
+            <div class="espaciado">
+                <label for="escribe-tu-consulta">Escribe tu consulta:</label>
+                <textarea name="escribe-tu-consulta" id="escribe-tu-consulta" cols="30" rows="10" placeholder="Ingresa tu consulta..."></textarea>
+            </div>
+            <div class="botones">
+                <button type="submit" class="enviar">Enviar consulta</button>
+                <button type="reset" class="borrar">Borrar campos</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="end">
+        <ul class="footer">
+            <li><a href="https://www.youtube.com" target="new" title="youtube"><img src="img/youtube.png" alt="youtube"></a></li>
+            <li><a href="https://twitter.com" target="new" title="Twitter"><img src="img/Twiter.png" alt="twitter"></a></li>
+            
+            <li><a href="https://www.whastapp.com/" target="new" title="whastapp"><img src="img/whatsapp.png" alt="whastapp"></a></li>
+        </ul>
+    <p>Diseñado por Sperdutti Patricia.</p>
+    </div>
+</footer>
+
+</body>
+</html>
